@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+main, header, nav, aside, article, footer, div {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+nav {
+    background-color: gray;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+nav li:hover {
+    background-color: red;
+    
+}
+
+nav li:hover a {
+    color: rgb(189, 189, 127);
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article .cikk {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid grey;
+    min-width: 200px;
+    justify-content: flex-end;
+}
+.cikk p {
+    flex: 1 0 auto;
+}
+
+.cikk:nth-child(3){
+    order: -1;
+}
+
+
+
